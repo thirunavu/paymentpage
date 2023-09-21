@@ -13,7 +13,7 @@
 <body>
     <h1>This is my sample payment page</h1>
     <button onclick="callFlutterGpay()">Gpay</button>
-    <button onclick="callFlutterCcAvanue()">ccAvanue payment page </button>
+    <button onclick="callFlutterCcAvanue()" id="sample_page">ccAvanue payment page </button>
 
     <script>
 
@@ -23,8 +23,9 @@
 
         }
         function callFlutterCcAvanue() {
-            var data = "ccAvanue"
-            window.flutter_inappwebview.callHandler('ccAvauePage', data)
+            document.getElementById("sample_page").addEventListener("click", function () {
+                window.location.href = "sample_page.html";
+            });
         }
 
     </script>
