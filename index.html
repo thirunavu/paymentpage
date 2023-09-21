@@ -12,14 +12,17 @@
 
 <body>
     <h1>This is my sample payment page</h1>
-    <button onclick="callFlutter()">Gpay</button>
-    <button onclick="callFlutter()">ccAvanue payment page </button>
+    <button onclick="callFlutterGpay()">Gpay</button>
+    <button onclick="callFlutterCcAvanue()">ccAvanue payment page </button>
 
     <script>
 
-        function callFlutter() {
+        function callFlutterGpay() {
             var data = "hello"
             window.flutter_inappwebview.callHandler('launchURL', data)
+
+        }
+        function callFlutterCcAvanue() {
             window.flutter_inappwebview.callHandler('ccAvauePage', data)
         }
 
