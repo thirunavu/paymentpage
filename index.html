@@ -12,10 +12,17 @@
 
 <body>
     <h1>This is my sample payment page</h1>
-    <button onclick="launchURL()">Gpay</button>
+    <button onclick="callFlutter()">Gpay</button>
     <button>normal web page</button>
     <button>isClick</button>
+    <script>
 
+        function callFlutter() {
+            var data = "hello"
+            window.flutter_inappwebview.callHandler('launchURL', data)
+        }
+
+    </script>
 </body>
 
 </html>
