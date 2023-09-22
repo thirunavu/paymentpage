@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,7 +9,29 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
+
 <body>
     <h1>This is my sample payment page</h1>
+    <button onclick="callFlutterGpay()">Gpay</button>
+    <button onclick="callFlutterCcAvanue()" id="sample_page">ccAvanue payment page </button>
+
+    <a href="upi://pay?pa=dinesh@dlanzer&pn=Dinesh&am=1&tn=Test Payment&cu=INR">Google Pay Link</a>
+    <a href="/sample_page.html">Sample Page Link</a>
+
+    <!-- <script>
+
+        function callFlutterGpay() {
+            var data = "hello"
+            window.flutter_inappwebview.callHandler('launchURL', data)
+
+        }
+        function callFlutterCcAvanue() {
+            document.getElementById("sample_page").addEventListener("click", function () {
+                window.location.href = "sample_page.html";
+            });
+        }
+
+    </script> -->
 </body>
+
 </html>
